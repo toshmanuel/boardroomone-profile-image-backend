@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.lang.invoke.DelegatingMethodHandle$Holder;
+
 @Component
 @Data
 public class CloudinaryConfig {
@@ -17,6 +19,9 @@ public class CloudinaryConfig {
 
     @Value("${API_SECRET}")
     private String apiSecret;
+
+    @Value("${API_SECRET_KEY_REMOVE_BG}")
+    private String apiSecretKeyRemoveBg;
 
 
 }
