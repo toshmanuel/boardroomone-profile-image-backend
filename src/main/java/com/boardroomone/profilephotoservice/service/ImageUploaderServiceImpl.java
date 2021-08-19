@@ -9,6 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
@@ -27,7 +28,8 @@ public class ImageUploaderServiceImpl {
 
     public Map<?, ?> uploadImage(MultipartFile imageFile) throws FileNotFoundException {
         if (imageFile == null) throw new FileNotFoundException("File not found");
-        Map<?, ?> uploadResult = null;
+        Map<?, ?> uploadResult;
+        Map<Object, Object> resultToReturn = new HashMap<>();
 
         if(!imageFile.isEmpty()){
             try {
@@ -41,11 +43,16 @@ public class ImageUploaderServiceImpl {
                                 FOLDER_NAME + extractFileName(Objects.requireNonNull(imageFile.getOriginalFilename())))
                 );
 
+                resultToReturn.put("secure_url", uploadResult.get("secure_url"));
+                resultToReturn.put("format", uploadResult.get("format"));
+                resultToReturn.put("url", uploadResult.get("url"));
+
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        return uploadResult;
+        return resultToReturn;
 
     }
 
