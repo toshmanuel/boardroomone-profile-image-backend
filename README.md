@@ -71,6 +71,7 @@ This backend application is accessible via -> [BoardRoomOne Profile Picture](htt
 
 ## Example 3
 * Image Before it was uploaded and edited
+  
   ![Image to Upload](src/main/resources/static/test_imgs/woman_orig.jpg)
 
 
