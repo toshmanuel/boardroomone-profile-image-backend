@@ -46,4 +46,35 @@ This backend application is accessible via -> [BoardRoomOne Profile Picture](htt
 * [Link to frontend page](https://boardroomone.netlify.app/)
     
         Postman Documentation:
+* [Link to postman documentation:](https://documenter.getpostman.com/view/15208329/TzzBpbCP)
 
+---
+## Example with Image
+### Example 1
+* Image Before it was uploaded and edited
+![Image to Upload](src/main/resources/static/test_imgs/image_0001.jpg)
+
+
+
+* Image result after edit
+![Resulting Image](https://res.cloudinary.com/toshmanuel/image/upload/v1629305627/boardroomone/image_0001.png)
+  
+## Example 2
+* Image Before it was uploaded and edited
+  ![Image to Upload](src/main/resources/static/test_imgs/image_0018.jpg)
+
+
+
+* Image result after edit
+  ![Resulting Image](https://res.cloudinary.com/toshmanuel/image/upload/v1629298049/boardroomone/image_0018.png)
+
+
+## Example 3
+* Image Before it was uploaded and edited
+  ![Image to Upload](src/main/resources/static/test_imgs/woman_orig.jpg)
+
+
+
+* Image result after edit
+  
+  ![Resulting Image](https://res.cloudinary.com/toshmanuel/image/upload/v1629298115/boardroomone/woman_orig.png)
