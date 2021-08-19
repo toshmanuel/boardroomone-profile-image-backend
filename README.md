@@ -1,4 +1,4 @@
-#Boardroomone Profile Image Service (Backend)
+# Boardroomone Profile Image Service (Backend)
 ***
 
 This application is will collect a user's profile image from a client side application and change the background to black, and likwise remove crop the image to detect the face of the user and crop it.
